@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perusahaan Susu - Kontak</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Logo Perusahaan Susu" width="100" height="100">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products">Produk</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda memiliki pertanyaan, silakan hubungi kami di:</p>
+        <p>Email: info@perusahaansusu.com</p>
+        <p>Telepon: +62 123 456 789</p>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Perusahaan Susu. Semua hak dilindungi BY RIZKI CAHYA SULISTIAN_0997 .</p>
+    </footer>
+</body>
+</html>

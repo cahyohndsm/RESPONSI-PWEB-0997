@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Perusahaan Susu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Logo Perusahaan Susu" width="100" height="100">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">Tentang Kami</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/products">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Produk Kami</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Yogurt Plain</h3>
+                <img src="{{ url_for('static', filename='images/yogurt-plain.jpeg') }}" alt="Yogurt Plain" class="img-fluid">
+                <p>Yogurt plain yang lembut dan segar, cocok untuk berbagai keperluan. Kaya akan probiotik yang baik untuk pencernaan.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Yogurt Buah</h3>
+                <img src="{{ url_for('static', filename='images/yogurt-buah.jpeg') }}" alt="Yogurt Buah" class="img-fluid">
+                <p>Yogurt dengan campuran buah segar, memberikan rasa yang manis dan menyegarkan. Pilihan sempurna untuk sarapan atau camilan sehat.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Yogurt Greek</h3>
+                <img src="{{ url_for('static', filename='images/yogurt-greek.jpeg') }}" alt="Yogurt Greek" class="img-fluid">
+                <p>Yogurt Greek yang kental dan creamy, kaya protein dan rendah lemak. Ideal untuk diet sehat dan sebagai bahan dalam berbagai resep.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h3>Mini Yogurt Drink</h3>
+                <img src="{{ url_for('static', filename='images/mini-yogurt-drink.jpeg') }}" alt="Mini Yogurt Drink" class="img-fluid">
+                <p>Minuman yogurt mini yang praktis dan lezat, sempurna untuk dibawa saat bepergian. Menyediakan kebaikan yogurt dalam kemasan yang mudah.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Fresh Milk</h3>
+                <img src="{{ url_for('static', filename='images/fresh-milk.jpeg') }}" alt="Fresh Milk" class="img-fluid">
+                <p>Susu segar yang diproduksi dari susu sapi pilihan, kaya akan kalsium dan vitamin. Cocok untuk semua usia dan dapat dinikmati kapan saja.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Yogurt Stick</h3>
+                <img src="{{ url_for('static', filename='images/yogurt-stick.jpeg') }}" alt="Yogurt Stick" class="img-fluid">
+                <p>Yogurt stick yang praktis dan lezat, ideal sebagai camilan sehat untuk anak-anak. Mengandung probiotik yang baik untuk kesehatan pencernaan.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Perusahaan Susu. Semua hak dilindungi BY RIZKI CAHYA SULISTIAN_0997 .</p>
+    </footer>
+</body>
+</html>
